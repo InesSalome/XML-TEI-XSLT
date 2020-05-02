@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- DTD pour la déclaration des abrévations -->
+<!DOCTYPE texte [
+<!ENTITY q_que "<choice><abbr>&#59009;</abbr><expan>que</expan></choice>">
+<!ENTITY a_tilde_n "<choice><abbr>&#227;</abbr><expan>an</expan></choice>">
+<!ENTITY a_tilde_m "<choice><abbr>&#227;</abbr><expan>am</expan></choice>">
+<!ENTITY z_et "<choice><abbr>z</abbr><expan>et</expan></choice>">
+<!ENTITY co_com "<choice><abbr>c&#245;</abbr><expan>c<ex>om</ex></expan></choice>">
+<!ENTITY e_tilde_n "<choice><abbr>&#275;</abbr><expan>en</expan></choice>">
+<!ENTITY nre_nostre "<choice><abbr>nr&#771;s</abbr><expan>n<ex>ost</ex>re</expan></choice>">
+<!ENTITY e_tilde_m "<choice><abbr>&#275;</abbr><expan>em</expan></choice>">
+<!ENTITY p_barre_pre "<choice><abbr>&#58981;</abbr><expan>pre</expan></choice>">
+<!ENTITY qat_tilde "<choice><abbr>q&#227;t</abbr><expan>q<ex>uan</ex>t</expan></choice>">
+<!ENTITY note_tyronienne_con "<choice><abbr>&#42863;</abbr><expan>con</expan></choice>"> 
+<!ENTITY p_barre_per "<choice><abbr>&#42833;</abbr><expan>per</expan></choice>">
+<!ENTITY mi_ser_icorde "<choice><abbr>mi&#59575;icorde</abbr><expan>mi<ex>ser</ex>icorde</expan></choice>">
+<!ENTITY i_tilde_n "<choice><abbr>&#299;</abbr><expan>in</expan></choice>">
+<!ENTITY q_barre_verticale "<choice><abbr>q&#781;</abbr><expan>qui</expan></choice>">
+<!ENTITY p_barre_priere "<choice><abbr>&#58981;iere</abbr><expan><ex>pr</ex>iere</expan></choice>">
+<!ENTITY o_tilde_n "<choice><abbr>&#245;</abbr><expan>on</expan></choice>">
+<!ENTITY e_eur "<choice><abbr>&#7633;</abbr><expan>e<ex>ur</ex></expan></choice>">
+<!ENTITY note_tyronienne_com "<choice><abbr>&#42863;</abbr><expan>com</expan></choice>"> 
+<!ENTITY bn_bien "<choice><abbr>b&#781;n</abbr><expan>bien</expan></choice>">
+<!ENTITY tre_terre "<choice><abbr>t&#781;re</abbr><expan>terre</expan></choice>">
+<!ENTITY deps_depuis "<choice><abbr>de&#7765;s</abbr><expan>dep<ex>ui</ex>s</expan></choice>">
+<!ENTITY tre_terre "<choice><abbr>&#59106;re</abbr><expan>terre</expan></choice>">
+<!ENTITY note_tyronienne_us "<choice><abbr>&#42864;</abbr><expan>us</expan></choice>">
+<!ENTITY seigneur "<choice>seigne<abbr>&#9676;&#771;</abbr><expan>seigne<ex>ur</ex></expan></choice>">
+<!ENTITY vertu "<choice><abbr>&#59194;tu</abbr><expan><ex>ver</ex>tu</expan></choice>">
+<!ENTITY pooir "<choice><abbr>pooir</abbr><expan>pouvoir</expan></choice>">
+<!ENTITY erz_entiere "<choice><abbr>er&#732;z</abbr><expan>entiere</expan></choice>">
+<!ENTITY dernier "<choice><abbr>der&#59364;</abbr><expan>der<ex>nier</ex></expan></choice>">
+<!ENTITY po_pour "<choice><abbr>po&#61792;</abbr><expan>po<ex>ur</ex></expan></choice>">
+<!ENTITY s_barré_ser "<choice><abbr>&#7836;</abbr><expan>ser</expan></choice>">
+<!ENTITY double_p_lies "<choice><abbr>&#61143;</abbr><expan>pro</expan></choice>">
+<!ENTITY mlt_moult "<choice><abbr>m&#58764;t</abbr><expan>moult</expan></choice>">
+]>
+
+<?xml-model href="out/ODD_vie_st_Gilles_G_Patat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>La Vie de pluseurs seins et seintes</title>
+            <respStmt>
+               <resp>Encodage réalisé dans le cadre d'une évaluation du Master TNAH de l'École des
+                  Chartes</resp>
+               <persName>
+                  <forename>Gwenaëlle</forename>
+                  <surname>Patat</surname>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <p>Texte édité dans la cadre d'un projet d'encodage pour le master TNAH, session
+               2019-2020.</p>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="G1">
+               <msIdentifier>
+                  <settlement>Paris</settlement>
+                  <repository>Bibliothèque nationale de France. Département des
+                     manuscrits.</repository>
+                  <idno>Français 411 (fr. 00411)</idno>
+                  <altIdentifier>
+                     <idno>Anc. 7019</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItemStruct>
+                     <locus from="170rb" to="174rb">Folio 170rb - 174rb</locus>
+                     <author>Wauchier de Denain</author>
+                     <title>Vie de saint Gilles</title>
+                     <incipit>Nus crestiens n'est en terre qui nostre segneur velle servir ne amer
+                        qui volentiers n'entende et oie cels qui racontent et dient</incipit>
+                     <explicit>Or deproions nos et requerons beax sire seinz Giles boens peres que
+                        tes seintes merites nos puissent aidier et secorre a NSJC (+doxo)</explicit>
+                     <textLang mainLang="fro">oil-français</textLang>
+                  </msItemStruct>
+               </msContents>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>Vélin, Parchemin</support>
+                        <extent>
+                           <width unit="mm">250</width>
+                           <height unit="mm">345</height>
+                        </extent>
+                        <foliation>36 quaternions, 287 feuillets</foliation>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout columns="2" writtenLines="40">
+                           <p>Justification en hauteur de 230mm ; justification en largeur de 165mm
+                              ; unité de réglure de 6mm ; largeur de colonne de 70mm ; largeur
+                              d'entrecolonne de 23mm ; localisation de piqûres en gouttière ; marge
+                              de tête de 24 mm ; marge de queue de 91mm ; marge de couture de 24mm ;
+                              marge de gouttière de 54mm.</p>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc hands="1">
+                     <handNote xml:id="m1"/>
+                  </handDesc>
+                  <scriptDesc>
+                     <scriptNote>écriture gothique livresque</scriptNote>
+                  </scriptDesc>
+                  <decoDesc>
+                     <decoNote>L'espace réservé pour les miniatures et les lettres ornées est resté
+                        en blanc, avec lettres d'attente. La décoration des lettres ornées n'est
+                        réalisée que sur le troisième cahier (f.17-24v.). Présence de majuscules
+                        dans le texte réhaussées de jaune.</decoNote>
+                  </decoDesc>
+               </physDesc>
+               <history>
+                  <provenance>
+                     <listBibl>
+                        <bibl>
+                           <author>Gaston Paris et Alphonse Bos</author>
+                           <title>La Vie de saint Gilles par Guillaume de Berneville</title>
+                           <pubPlace>Paris</pubPlace>
+                           <publisher>Société des Anciens Textes Français</publisher>
+                           <date>1881</date>
+                        </bibl>
+                        <bibl>
+                           <author>John Jay Thompson</author>
+                           <title>Medioevo Romanzo</title>
+                           <title level="a">The recent discovery of a collection in early french
+                              prose, Wauchier de Denain's Li seint confessor</title>
+                           <biblScope unit="volume"> Vol. XXXI, Fascicolo II</biblScope>
+                           <biblScope unit="page" from="241" to="285"/>
+                           <publisher>Romance Notes</publisher>
+                           <date>1998</date>
+                        </bibl>
+                        <bibl>
+                           <author>Paolo Chiesa</author>
+                           <title>I “Dialogi” di Gregorio Magno. Tradizione del testo e antiche
+                              traduzioni</title>
+                           <pubPlace>Florence</pubPlace>
+                           <publisher>Sismel, Edizioni del Galluzzo</publisher>
+                           <date>2006</date>
+                        </bibl>
+                        <bibl>
+                           <author>Nicola Morato</author>
+                           <title>Un nuovo frammento del Guiron Le Courtois. L'incipit del MS. BNF,
+                              FR. 350 e la sua consistenza testuale</title>
+                           <pubPlace>Florence</pubPlace>
+                           <publisher>Sismel, Edizioni del Galluzzo</publisher>
+                           <date>2006</date>
+                        </bibl>
+                        <bibl>
+                           <author>Fabio ZINELLI</author>
+                           <title>L'agiografia volgare. Tradizioni di testi, motivi e linguaggi.
+                              Atti del congresso internazionale, Klagenfurt, 15-16 gennaio
+                              2015</title>
+                           <title level="a">Au carrefour des traditions italiennes et
+                              méditerranéennes. Un légendier français et ses rapports avec
+                              l'histoire ancienne jusqu'à César et les Fait des romains</title>
+                           <pubPlace>Heidelberg : Universitätsverlag</pubPlace>
+                           <date>2016</date>
+                        </bibl>
+                        <bibl>
+                           <author>H. Beronius</author>
+                           <title>Vie et martyre de sainte Félicité et de ses sept fils, légende du
+                              commencement du XIVe siècle, contenant le vieux texte français (BN;
+                              fr. 411), la traduction en français moderne et une notice historique
+                              sur la langue française</title>
+                           <pubPlace>Lund</pubPlace>
+                           <publisher>inconnu</publisher>
+                           <date>inconnue</date>
+                        </bibl>
+                        <bibl>
+                           <author>>Eugenio Burgio</author>
+                           <title>I 'Dialogi' di Gregorio Magno. Tradizione del testo e antiche
+                              traduzioni, Archivum gregorianum</title>
+                           <title level="a">Schede bibliografiche sulla tradizione delle versioni
+                              antico-francesi dei 'Dialogi' di Gregorio Magno</title>
+                           <pubPlace>Florence</pubPlace>
+                           <biblScope unit="page" from="83" to="126"/>
+                           <publisher>Edizioni del Galluzzo / Sismel</publisher>
+                           <date>2O06</date>
+                        </bibl>
+                        <bibl>
+                           <author>Martina Di Febo</author>
+                           <title>Les versions en prose du Purgatoire de saint Patrice en ancien
+                              français</title>
+                           <pubPlace>Paris</pubPlace>
+                           <publisher>Champion</publisher>
+                           <date>2013</date>
+                        </bibl>
+                        <bibl>
+                           <author>Molly Lynde-Recchia</author>
+                           <title>Revue Bénédictine</title>
+                           <title level="a">Wauchier de Denain's Vie de seint Marciau (as found in
+                              Bibliothèque Nationale ms. Fr. 411)</title>
+                           <biblScope unit="volume" n="108"/>
+                           <biblScope unit="page" from="169" to="177"/>
+                           <date>1998</date>
+                        </bibl>
+                        <bibl>
+                           <author>>Anne-Françoise Leurquin</author>
+                           <title>Le recueil au Moyen Âge, le Moyen Âge central., Texte, Codex et
+                              Contexte</title>
+                           <title level="a">Les hésitations du cycle christique du légendier G de
+                              Paul Meyer</title>
+                           <pubPlace>Turnhout</pubPlace>
+                           <biblScope unit="page" from="223" to="235"/>
+                           <publisher>Brepols</publisher>
+                           <date>2O10</date>
+                        </bibl>
+                        <bibl>
+                           <author>Molly Lynde-Recchia</author>
+                           <title>Wauchier de Denain. La vie seint Marcel de Lymoges</title>
+                           <pubPlace>Genève</pubPlace>
+                           <publisher>Droz</publisher>
+                           <date>2005</date>
+                        </bibl>
+                        <bibl>
+                           <author>>Paul Meyer</author>
+                           <title>Histoire littéraire de la France</title>
+                           <title level="a"> Versions en vers et en prose des Vies des Pères</title>
+                           <biblScope unit="volume" n="33"/>
+                           <biblScope unit="page" from="254" to="328"/>
+                           <date>10906</date>
+                        </bibl>
+                        <bibl>
+                           <title type="online" facs="http://jonas.irht.cnrs.fr/manuscrit/71287"
+                              >Notice IRHT du ms Paris BN fr 411 (C. F.)</title>
+                           <pubPlace>Paris</pubPlace>
+                           <date>1966</date>
+                        </bibl>
+                     </listBibl>
+                  </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <creation>
+            <date notAfter="1212">début du XIIIe siècle (avant 1212)</date>
+            <country>Nord de la France</country>
+            <lang xml:lang="fro">oil-français</lang>
+         </creation>
+         <!-- Index des lieux et des personnages -->
+         <settingDesc>
+            <listPlace>
+               <place xml:id="grece">
+                  <placeName>
+                     <country>Grèce</country>
+                  </placeName>
+               </place>
+               <place xml:id="marseille">
+                  <placeName>
+                     <country>France</country>
+                     <settlement type="city">la cite de Marseille</settlement>
+                  </placeName>
+               </place>
+               <place xml:id="rome">
+                  <placeName>
+                     <country>Italie</country>
+                     <settlement type="city">Rome</settlement>
+                  </placeName>
+               </place>
+            </listPlace>
+         </settingDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="Gilles" sex="M">
+                  <persName ref="https://fr.wikipedia.org/wiki/Gilles_l%27Ermite">
+                     <forename xml:lang="fre">Gilles</forename>
+                     <roleName>saint</roleName>
+                     <date type="dies_natalis">1er septembre</date>
+                     <addName>l'Ermite</addName>
+                  </persName>
+                  <faith>catholique</faith>
+                  <death ref="https://gallica.bnf.fr/ark:/12148/bpt6k202210w/f525.image"
+                     type="légende">
+                     <date when="0700"/>
+                  </death>
+               </person>
+               <person xml:id="marins">
+                  <persName>
+                     <roleName>Marins, compagnons de saint Gilles</roleName>
+                  </persName>
+               </person>
+               <person xml:id="un_homme">
+                  <persName>
+                     <forename>un homme</forename>
+                  </persName>
+               </person>
+            </listPerson>
+         </particDesc>
+      </profileDesc>
+   </teiHeader>
+
+   <text>
+      <body>
+         <div type="œuvre_hagiographique">
+            <pb type="folio" n="171a"
+               facs="https://gallica.bnf.fr/ark:/12148/btv1b107209247/f176.item.zoom"/>
+            <cb/>
+            <!-- Si nous pouvons lire les letters "uis", l'espace pour la lettrine "P", qui aurait dû être peinte, est vide : l'enlumineur a fait une sorte de petite lettrine sur le "u". -->
+            <p>
+               <supplied reason="space" ana="hypothese">P</supplied>
+               <choice>
+                  <orig><hi rend="lettrine">U</hi></orig>
+                  <reg>u</reg>
+               </choice>is &q_que; la loenge de ses gr&a_tilde_n;z<lb/> fez fu se<choice>
+                  <orig>u</orig>
+                  <reg>v</reg>
+               </choice>e &z_et; esparse par totes<lb/> les parties de <placeName ref="#grece"><choice>
+                     <orig>grece</orig>
+                     <reg>Grece</reg>
+                  </choice></placeName> il cremi &q_que;<lb/> sa merite ne fust amenusiee en
+               aucune<lb/> maniere par<pc type="reg">&#160;</pc>la loenge &co_com; li fesoit<pc
+                  type="reg">.</pc> Si<lb/> se<pc type="reg">&#160;</pc>porpensa q<pc type="reg"
+                  >'</pc>il deguerpiroit sa &tre_terre;<pc type="reg">&#160;</pc>&z_et; sa<lb/>
+               contree &z_et; trespasseroit la<pc type="reg">&#160;</pc>mer en aucu<lb rend="hyphen"
+               />ne region<pc type="orig" rend="colon" function="media_distinctio">.</pc><pc
+                  type="reg">&#160;</pc>&z_et; m&e_tilde_n;eroit <choice>
+                  <orig>u</orig>
+                  <reg>v</reg>
+               </choice>ie solitaire &z_et; por<lb rend="hyphen"/>&s_barré_ser; <choice>
+                  <orig>u</orig>
+                  <reg>v</reg>
+               </choice>ir &nre_nostre; Seignor pl&note_tyronienne_us; franchem&e_tilde_n;t
+               d&o_tilde_n;t<lb/> s<pc type="reg">'</pc>en ala au ri<choice>
+                  <orig>u</orig>
+                  <reg>v</reg>
+               </choice>age de<pc type="reg">&#160;</pc>la mer si fist ses<lb/> oroisons a<pc
+                  type="reg">&#160;</pc>&nre_nostre; Seignor q<pc type="reg">'</pc>il li aidast a<pc
+                  type="reg">&#160;</pc>&e_tilde_m;<lb rend="hyphen"/>plir son
+                  &double_p_lies;posem&e_tilde_n;t<pc type="reg">.</pc> Il not mie longue<lb
+                  rend="hyphen"/>m&e_tilde_n;t la este &qat_tilde; il uit une nef loing en<lb/> la
+                  mer<pc type="orig" rend="colon" function="media_distinctio">.</pc><pc type="reg"
+                  >&#160;</pc>cui si gr&a_tilde_n;t tempeste auoit acu<lb rend="hyphen"/>eillie <choice>
+                  <orig><hi rend="majuscule">Q</hi></orig>
+                  <reg>q</reg>
+               </choice>e dedenz n<pc type="reg">'</pc>auoit si sage <persName ref="#marins"
+                     >marini<lb rend="hyphen"/>er</persName> qi seust &note_tyronienne_con;seill de
+               sa uie<pc type="orig" rend="colon" function="media_distinctio">.</pc> e&i_tilde_n;z
+               estoient<lb/> tuit deses&p_barre_per;ez ne autre chose n<pc type="reg"
+                  >'</pc>atendo<lb rend="hyphen"/>ient &q_que; mort procheine<pc type="reg">.</pc>
+               Qant <persName ref="#Gilles">li seinz<lb/>
+                  <cb/> hom</persName> les <choice>
+                  <orig>u</orig>
+                  <reg>v</reg>
+               </choice>it en tel dolor &z_et; en tele ango<lb rend="hyphen"/>isse <choice>
+                  <orig><hi rend="majuscule">I</hi></orig>
+                  <reg>i</reg>
+               </choice>l fist a &nre_nostre; Seign&e_eur; s<pc type="reg">'</pc>oroison por
+               eus<lb/> q<pc type="reg">'</pc>il les deli<choice>
+                  <orig>u</orig>
+                  <reg>v</reg>
+               </choice>rast de cele douleur ou il esto<lb rend="hyphen"/>i&e_tilde_n;t par sa
+               gr&a_tilde_n;t &mi_ser_icorde;<pc type="reg">.</pc> Lors fu ape<lb rend="hyphen"
+               />siee la tempeste &z_et; cil vindr&e_tilde_n;t a<pc type="reg">&#160;</pc>port
+               qui<lb/> gr&a_tilde_n;t ioie demenoi&e_tilde_n;t porce q<pc type="reg">'</pc>il
+               estoient<lb/> de<pc type="reg">&#160;</pc>la gr&a_tilde_n;t male aventure eschape
+                  &z_et;<pc type="reg">&#160;</pc>de<lb rend="hyphen"/>liure <choice>
+                  <orig><hi rend="majuscule">Q</hi></orig>
+                  <reg>q</reg>
+               </choice>ant il <choice>
+                  <orig>u</orig>
+                  <reg>v</reg>
+               </choice>ir&e_tilde_n;t <persName ref="#Gilles">le se&i_tilde_n;t home</persName><pc
+                  type="reg">&#160;</pc>&q_barre_verticale; en<lb rend="hyphen"/>core estoit en
+               oroisons seur le ri<choice>
+                  <orig>u</orig>
+                  <reg>v</reg>
+               </choice>age<lb/>
+               <choice>
+                  <orig><hi rend="majuscule">I</hi></orig>
+                  <reg>i</reg>
+               </choice>l se pensser&e_tilde_n;t &q_que; par ses &p_barre_priere;s
+               estoi&e_tilde_n;t<lb/> il eschapez des gr&a_tilde_n;z perius ou il fur&e_tilde_n;t<pc
+                  type="reg">.</pc><lb/> Quant il li or&e_tilde_n;t demande qi il estoit &z_et;<lb/>
+               por qele achoison il estoit <choice>
+                  <orig>u</orig>
+                  <reg>v</reg>
+               </choice>enuz au pors<lb/> de<pc type="reg">&#160;</pc>la mer<pc type="orig"
+                  rend="colon" function="media_distinctio">.</pc><pc type="reg">&#160;</pc><persName
+                  ref="#Gilles">li se&i_tilde_n;z hom</persName> lor respondi <choice>
+                  <orig>Q</orig>
+                  <reg>q</reg>
+               </choice><pc type="reg">'</pc>il<lb/> estoit crestiens &z_et; q<pc type="reg"
+               >'</pc>il uouloit aler a<pc type="reg">&#160;</pc><placeName ref="#rome"><choice>
+                     <orig>r</orig>
+                     <reg>R</reg>
+                  </choice>o<lb rend="hyphen"/>me</placeName> se &dernier; len uouloit
+               d&o_tilde_n;ner &vertu;<pc type="reg">&#160;</pc>&z_et; pooir<pc type="reg"
+               >.</pc><lb/> Lors se<pc type="reg">&#160;</pc>lessier&e_tilde_n;t tuit <persName
+                  ref="#marins">li marinier</persName> cheoir<lb/> a<pc type="reg">&#160;</pc>ses
+               piez &z_et;<pc type="reg">&#160;</pc>si distr&e_tilde_n;t <choice>
+                  <orig>N</orig>
+                  <reg>n</reg>
+               </choice>os rend&o_tilde_n;s gra<lb rend="hyphen"/>ces a<pc type="reg"
+               >&#160;</pc>&nre_nostre; Seign&e_eur; q<pc type="reg">'</pc>il nos deigne doner<lb/>
+               tel &note_tyronienne_com;paignie qi nos a deli<choice>
+                  <orig>u</orig>
+                  <reg>v</reg>
+               </choice>re del grant<lb/> &p_barre_per;ill ou no&note_tyronienne_us; estions <choice>
+                  <orig><hi rend="majuscule">E</hi></orig>
+                  <reg>e</reg>
+               </choice>t qi nos deff&e_tilde_n;dra<lb/> des gr&a_tilde_n;z tempestes de<pc
+                  type="reg">&#160;</pc>la<pc type="reg">&#160;</pc>mer &q_que; nos
+               dev&o_tilde_n;s<lb/> trespasser &z_et;<pc type="reg">&#160;</pc>&bn_bien; sachiez
+               &q_que; nos somes de<lb rend="hyphen"/>uers <placeName ref="#rome"><choice>
+                     <orig>r</orig>
+                     <reg>R</reg>
+                  </choice>ome</placeName><pc type="reg">.</pc> Et se <choice>
+                  <orig>u</orig>
+                  <reg>v</reg>
+               </choice>os <choice>
+                  <orig>u</orig>
+                  <reg>v</reg>
+               </choice>ioulez <choice>
+                  <orig>u</orig>
+                  <reg>v</reg>
+               </choice>enir no&note_tyronienne_us;<lb/> nos passerons <choice>
+                  <orig>u</orig>
+                  <reg>v</reg>
+               </choice>ol&e_tilde_n;tiers ensemble ou<lb/>
+               <choice>
+                  <orig>u</orig>
+                  <reg>v</reg>
+               </choice>os sanz nul loier &q_que; nos endemando<lb rend="hyphen"/>mes<pc type="reg"
+                  >.</pc> Et ensemble o<pc type="reg">&#160;</pc>tot ce <choice>
+                  <orig>u</orig>
+                  <reg>v</reg>
+               </choice>os donrons<lb/> nos a<pc type="reg">&#160;</pc>oes a<pc type="reg"
+                  >&#160;</pc>&nre_nostre; cors &z_et; amenisterrons<lb/> tot ce dont <choice>
+                  <orig>u</orig>
+                  <reg>v</reg>
+               </choice>os auroiz besoinz<pc type="reg">.</pc> Qant<lb/>
+               <persName ref="#Gilles">li se&i_tilde_n;z hom</persName> oi<pc type="reg"
+               >&#160;</pc>ce si fu molt liez &z_et; benei<lb/> &nre_nostre; Seignor &z_et; rendi
+               graces &z_et;<pc type="reg">&#160;</pc>a<pc type="reg">&#160;</pc>lui con<lb
+                  rend="hyphen"/>manda son cors &z_et;<pc type="reg">&#160;</pc><persName
+                  ref="#marins">ses &note_tyronienne_com;paignons</persName><pc type="reg">.</pc>
+               Et<lb/> lors entra liez &z_et;<pc type="reg">&#160;</pc>hetiez en<pc type="reg"
+                  >&#160;</pc>la nef si ten<lb rend="hyphen"/>dir&e_tilde_n;t les <choice>
+                  <orig>u</orig>
+                  <reg>v</reg>
+               </choice>oiles &z_et; li uenz iferibons et<lb/> droituriers qi tost les ot partiz
+                  de<pc type="reg">&#160;</pc>la<lb/> terre &z_et; mis a<pc type="reg">&#160;</pc>la
+                  uoie<pc type="orig" rend="wavy_line">~</pc><pc type="reg">.</pc><lb/>
+            </p>
+            <p>
+               <hi rend="lettrine">I</hi>nsint corur&e_tilde_n;t <pc type="orig"
+                  rend="colon_for_number" function="subdistinctio">.</pc>iii<choice>
+                  <orig>j</orig>
+                  <reg>i</reg>
+               </choice><pc type="orig" rend="colon_for_number" function="subdistinctio">.</pc><pc
+                  type="reg">&#160;</pc>iorz &z_et;<pc type="reg">&#160;</pc><pc type="orig"
+                  rend="colon_for_number" function="subdistinctio">.</pc>iii<choice>
+                  <orig>j</orig>
+                  <reg>i</reg>
+               </choice><pc type="orig" rend="colon_for_number" function="subdistinctio">.</pc><lb/>
+               nuiz a<pc type="reg">&#160;</pc>bon uent &z_et; a<pc type="reg">&#160;</pc>pleines
+                  uo<lb rend="hyphen"/>iles tendues t&a_tilde_n;t q<pc type="reg">'</pc>il arriue<lb
+                  rend="hyphen"/>rent a<pc type="reg">&#160;</pc>une ille<pc type="reg">.</pc> La<pc
+                  type="reg">&#160;</pc>eissir&e_tilde_n;t <persName ref="#marins">li
+                  notonier</persName><lb/>
+               <pb type="folio" n="171c"
+                  facs="https://gallica.bnf.fr/ark:/12148/btv1b107209247/f177.item.zoom"/>
+               <cb/> por &p_barre_pre;ndre e<choice>
+                  <orig>u</orig>
+                  <reg>v</reg>
+               </choice>e douce &z_et; autres choses qi<lb/> b&o_tilde_n;nes fussent s<pc type="reg"
+                  >'</pc>il les tro<choice>
+                  <orig>u</orig>
+                  <reg>v</reg>
+               </choice>ass&e_tilde_n;t <choice>
+                  <orig><hi rend="majuscule">E</hi></orig>
+                  <reg>e</reg>
+               </choice>t q&a_tilde_n;t<lb/> il firr&e_tilde_n;t seur la &tre_terre; il <choice>
+                  <orig>u</orig>
+                  <reg>v</reg>
+               </choice>ir&e_tilde_n;t pas d<pc type="reg">'</pc>ome sel<lb/> sablon apparoir seur
+               le ri<choice>
+                  <orig>u</orig>
+                  <reg>v</reg>
+               </choice>age <choice>
+                  <orig><hi rend="majuscule">D</hi></orig>
+                  <reg>d</reg>
+               </choice>ont<lb/> sui<choice>
+                  <orig>u</orig>
+                  <reg>v</reg>
+               </choice>ir&e_tilde_n;t il tant cele trace des pas &q_barre_verticale;l
+                  v&i_tilde_n;<lb rend="hyphen"/>dr&e_tilde_n;t a<pc type="reg">&#160;</pc>une
+               cealle qi dedenz un espes bois<lb rend="hyphen"/>son estoit fete<pc type="reg">.</pc>
+               Et qant il a proismie<lb rend="hyphen"/>r&e_tilde_n;t &deps_depuis; il <choice>
+                  <orig>u</orig>
+                  <reg>v</reg>
+               </choice>ir&e_tilde_n;t <persName ref="#un_homme">un home</persName> qi lisoit
+               en<lb/> un libre <choice>
+                  <orig><hi rend="majuscule">M</hi></orig>
+                  <reg>m</reg>
+               </choice>einten&a_tilde_n;t sot &bn_bien;<pc type="reg">&#160;</pc><persName
+                  ref="#Gilles">se&i_tilde_n;z Giles</persName><lb/> qi estoit sers &nre_nostre;
+               Seignor si li dem&a_tilde_n;da<lb/> com&bn_bien; il a<choice>
+                  <orig>u</orig>
+                  <reg>v</reg>
+               </choice>oit iluec este &z_et;<pc type="reg">&#160;</pc>&q_que;l <choice>
+                  <orig>u</orig>
+                  <reg>v</reg>
+               </choice>ie il me<lb/> noit<pc type="reg">.</pc> Cil respondi q<pc type="reg"
+               >'</pc>il a<choice>
+                  <orig>u</orig>
+                  <reg>v</reg>
+               </choice>oit <pc type="orig" rend="colon_for_number" function="subdistinctio">.</pc>xi<choice>
+                  <orig>j</orig>
+                  <reg>i</reg>
+               </choice><pc type="orig" rend="colon_for_number" function="subdistinctio">.</pc>
+               anz<lb/> fete sa peneance &z_et;<pc type="reg">&#160;</pc><choice>
+                  <orig>u</orig>
+                  <reg>v</reg>
+               </choice>escu d<pc type="reg">'</pc>e<choice>
+                  <orig>u</orig>
+                  <reg>v</reg>
+               </choice>e &z_et; d<pc type="reg">'</pc>erbes<lb/> &z_et; de racines &z_et;<pc
+                  type="reg">&#160;</pc>&mlt_moult; d<pc type="reg">'</pc>autres choses<pc
+                  type="reg">.</pc> Q<lb rend="hyphen"/>ant <persName ref="#Gilles">li
+                  se&i_tilde_n;z hom</persName> loi il co<choice>
+                  <orig>u</orig>
+                  <reg>v</reg>
+               </choice>oita amener<lb/> tel <choice>
+                  <orig>u</orig>
+                  <reg>v</reg>
+               </choice>ie &z_et; puis si fist s<pc type="reg">&#160;</pc>oroison a<pc type="reg"
+                  >&#160;</pc>&nre_nostre; Sei<lb rend="hyphen"/>gneur &z_et;<pc type="reg"
+                  >&#160;</pc>a&p_barre_pre;s la<pc type="reg">&#160;</pc>cola &z_et;<pc type="reg"
+                  >&#160;</pc>embraca<pc type="reg">.</pc> Eins&i_tilde_n;t<lb/> proia li uns l<pc
+                  type="reg">'</pc>autre q<pc type="reg">'</pc>il proiast &po_pour; lui<pc
+                  type="reg">.</pc><lb/> Eins&i_tilde_n;t fur&e_tilde_n;t <pc type="orig"
+                  rend="colon_for_number" function="subdistinctio">.</pc>ii<choice>
+                  <orig>j</orig>
+                  <reg>i</reg>
+               </choice><pc type="orig" rend="colon_for_number" function="subdistinctio">.</pc> iorz
+               la &z_et; puis si &p_barre_pre;s<lb rend="hyphen"/>tr&e_tilde_n;t c&o_tilde_n;gie au
+                  <persName ref="#Gilles">se&i_tilde_n;t home</persName> qi la manoit<lb/> si s<pc
+                  type="reg">'</pc>en partirent<pc type="reg">.</pc> Qant il fur&e_tilde_n;t
+               r&e_tilde_n;tre<lb/> en lor nef il lessier&e_tilde_n;t corre lor <choice>
+                  <orig>u</orig>
+                  <reg>v</reg>
+               </choice>oiles<lb/> tendues au v&e_tilde_n;t &z_et;<pc type="reg"
+               >&#160;</pc>aler&e_tilde_n;t tant q<pc type="reg">'</pc>il uin<lb rend="hyphen"
+               />dr&e_tilde_n;t au tierz ior a<pc type="reg">&#160;</pc><placeName ref="#marseille"
+                  >la cite de <choice>
+                     <orig>m</orig>
+                     <reg>M</reg>
+                  </choice>arseile</placeName><lb/>
+            </p>
+         </div>
+      </body>
+   </text>
+</TEI>
